@@ -10,7 +10,7 @@ int main(int argc, char *argv[ ]) {
     int i;
 
     if ((pid = fork()) > 0) {
-        // if (wait(NULL) == -1) {
+        // if (waitpid(pid, NULL, 0) == -1) {
         //     perror("child process failed");
         //     exit(1);
         // }
